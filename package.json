@@ -6,7 +6,7 @@
   "scripts": {
     "start": "PORT=5000 foreman start",
     "watch": "foreman start -f dev.procfile",
-    "sync": "node_modules/browser-sync/bin/browser-sync start --server public --port 5001 --files 'public/*.html, public/*.css, public/*.js'",
+    "sync": "node_modules/browser-sync/bin/browser-sync start --proxy localhost:5000 --port 5001 --files 'public/*.html, public/*.css, public/*.js'",
     "bundle:my_app": "cd bundle && node ../node_modules/webpack/bin/webpack -w --config my_app.webpack.config.js",
     "install": "node_modules/napa/bin/napa",
     "test": "echo \"Error: no test specified\" && exit 1"
