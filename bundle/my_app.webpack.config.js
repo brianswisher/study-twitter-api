@@ -15,6 +15,7 @@ module.exports = {
     loaders: [
   { test: /\.jsx$/, loader: 'jsx-loader' },
   { test: /\.css$/, loader: "style-loader!css-loader" },
+  { test: /\.scss$/, loader: "style!css!sass?outputStyle=expanded" },
   { test: /\.otf$/, loader: "url-loader?mimetype=font/opentype" },
   { test: /\.png$/, loader: "url-loader?mimetype=image/png" }
   ]
