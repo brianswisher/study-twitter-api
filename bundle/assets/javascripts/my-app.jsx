@@ -1,7 +1,7 @@
-require("../stylesheets/my_app.css");
+require("../stylesheets/my-app.css");
 require("../stylesheets/fonts.css");
 
-var MyApp = require('./my_app/MyApp.jsx');
+var MyApp = require('./my-app/MyApp.jsx');
 var React = require('react');
 
 React.render(

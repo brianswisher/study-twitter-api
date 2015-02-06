@@ -8,10 +8,6 @@
 
   db = db.connect('server/db', ['items']);
 
-  router.get('/', function(req, res) {
-    res.render('index', {is_mobile:mobile(req)});
-  });
-
   router.get('/hello', function(req, res) {
     res.send('world');
   });
@@ -41,6 +37,14 @@
     res.json(db.items.remove({
       _id: req.params._id
     }));
+  });
+
+  // catch all at bottom
+  router.get('*', function(req, res) {
+    res.render('index', {
+      is_mobile: mobile(req),
+      path: req.params[0]
+    });
   });
 
   module.exports = router;

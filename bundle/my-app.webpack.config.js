@@ -2,9 +2,9 @@ var path = require('path');
 
 module.exports = {
   context: __dirname,
-  entry: './assets/javascripts/my_app.jsx',
+  entry: './assets/javascripts/my-app.jsx',
   output: {
-    filename: 'my_app.bundle.js',
+    filename: 'my-app.bundle.js',
     path: '../public/'
   },
   resolve: {
