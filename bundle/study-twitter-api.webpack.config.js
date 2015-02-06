@@ -2,9 +2,9 @@ var path = require('path');
 
 module.exports = {
   context: __dirname,
-  entry: './assets/javascripts/my-app.jsx',
+  entry: './assets/javascripts/study-twitter-api.jsx',
   output: {
-    filename: 'my-app.bundle.js',
+    filename: 'study-twitter-api.bundle.js',
     path: '../public/'
   },
   resolve: {

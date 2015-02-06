@@ -47,11 +47,11 @@
 	__webpack_require__(2);
 	__webpack_require__(4);
 
-	var MyApp = __webpack_require__(1);
 	var React = __webpack_require__(6);
+	var StudyTwitterApi = __webpack_require__(1);
 
 	React.render(
-	  React.createElement(MyApp, null),
+	  React.createElement(StudyTwitterApi, null),
 	  document.getElementById('viewport')
 	);
 
@@ -72,12 +72,12 @@
 	module.exports =
 	  React.createClass({
 
-	    displayName: 'MyApp',
+	    displayName: 'StudyTwitterApi',
 
 	    render:function(){
 	      return (
 	        React.createElement("div", {className: "app"}, 
-	          "My App"
+	          "study twitter api"
 	        )
 	      )
 	    }
@@ -98,8 +98,8 @@
 	// Hot Module Replacement
 	if(false) {
 		// When the styles change, update the <style> tags
-		module.hot.accept("!!/Users/brianswisher/dev/prototype_shell/node_modules/css-loader/index.js!/Users/brianswisher/dev/prototype_shell/bundle/assets/stylesheets/study-twitter-api.css", function() {
-			var newContent = require("!!/Users/brianswisher/dev/prototype_shell/node_modules/css-loader/index.js!/Users/brianswisher/dev/prototype_shell/bundle/assets/stylesheets/study-twitter-api.css");
+		module.hot.accept("!!/Users/brianswisher/dev/study-twitter-api/node_modules/css-loader/index.js!/Users/brianswisher/dev/study-twitter-api/bundle/assets/stylesheets/study-twitter-api.css", function() {
+			var newContent = require("!!/Users/brianswisher/dev/study-twitter-api/node_modules/css-loader/index.js!/Users/brianswisher/dev/study-twitter-api/bundle/assets/stylesheets/study-twitter-api.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -128,8 +128,8 @@
 	// Hot Module Replacement
 	if(false) {
 		// When the styles change, update the <style> tags
-		module.hot.accept("!!/Users/brianswisher/dev/prototype_shell/node_modules/css-loader/index.js!/Users/brianswisher/dev/prototype_shell/bundle/assets/stylesheets/fonts.css", function() {
-			var newContent = require("!!/Users/brianswisher/dev/prototype_shell/node_modules/css-loader/index.js!/Users/brianswisher/dev/prototype_shell/bundle/assets/stylesheets/fonts.css");
+		module.hot.accept("!!/Users/brianswisher/dev/study-twitter-api/node_modules/css-loader/index.js!/Users/brianswisher/dev/study-twitter-api/bundle/assets/stylesheets/fonts.css", function() {
+			var newContent = require("!!/Users/brianswisher/dev/study-twitter-api/node_modules/css-loader/index.js!/Users/brianswisher/dev/study-twitter-api/bundle/assets/stylesheets/fonts.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -361,8 +361,8 @@
 	// Hot Module Replacement
 	if(false) {
 		// When the styles change, update the <style> tags
-		module.hot.accept("!!/Users/brianswisher/dev/prototype_shell/node_modules/css-loader/index.js!/Users/brianswisher/dev/prototype_shell/bundle/assets/stylesheets/study-twitter-api/main.css", function() {
-			var newContent = require("!!/Users/brianswisher/dev/prototype_shell/node_modules/css-loader/index.js!/Users/brianswisher/dev/prototype_shell/bundle/assets/stylesheets/study-twitter-api/main.css");
+		module.hot.accept("!!/Users/brianswisher/dev/study-twitter-api/node_modules/css-loader/index.js!/Users/brianswisher/dev/study-twitter-api/bundle/assets/stylesheets/study-twitter-api/main.css", function() {
+			var newContent = require("!!/Users/brianswisher/dev/study-twitter-api/node_modules/css-loader/index.js!/Users/brianswisher/dev/study-twitter-api/bundle/assets/stylesheets/study-twitter-api/main.css");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -24178,7 +24178,7 @@
 	var ReactPropTypeLocationNames = __webpack_require__(61);
 
 	var deprecated = __webpack_require__(41);
-	var emptyFunction = __webpack_require__(103);
+	var emptyFunction = __webpack_require__(101);
 
 	/**
 	 * Collection of methods that allow declaration and validation of props that are
@@ -24534,9 +24534,9 @@
 
 	var ReactElement = __webpack_require__(27);
 	var ReactInstanceHandles = __webpack_require__(32);
-	var ReactMarkupChecksum = __webpack_require__(101);
+	var ReactMarkupChecksum = __webpack_require__(102);
 	var ReactServerRenderingTransaction =
-	  __webpack_require__(102);
+	  __webpack_require__(103);
 
 	var instantiateReactComponent = __webpack_require__(62);
 	var invariant = __webpack_require__(51);
@@ -25415,7 +25415,7 @@
 
 	"use strict";
 
-	var emptyFunction = __webpack_require__(103);
+	var emptyFunction = __webpack_require__(101);
 
 	/**
 	 * Similar to invariant but only logs a warning if the condition is not met.
@@ -26531,7 +26531,7 @@
 	"use strict";
 
 	var assign = __webpack_require__(40);
-	var emptyFunction = __webpack_require__(103);
+	var emptyFunction = __webpack_require__(101);
 	var invariant = __webpack_require__(51);
 	var joinClasses = __webpack_require__(107);
 	var warning = __webpack_require__(49);
@@ -28955,7 +28955,7 @@
 
 	var EventConstants = __webpack_require__(50);
 
-	var emptyFunction = __webpack_require__(103);
+	var emptyFunction = __webpack_require__(101);
 
 	var topLevelTypes = EventConstants.topLevelTypes;
 
@@ -29017,7 +29017,7 @@
 	"use strict";
 
 	var ReactDOMIDOperations = __webpack_require__(125);
-	var ReactMarkupChecksum = __webpack_require__(101);
+	var ReactMarkupChecksum = __webpack_require__(102);
 	var ReactMount = __webpack_require__(34);
 	var ReactPerf = __webpack_require__(36);
 	var ReactReconcileTransaction = __webpack_require__(126);
@@ -29143,7 +29143,7 @@
 	var Transaction = __webpack_require__(106);
 
 	var assign = __webpack_require__(40);
-	var emptyFunction = __webpack_require__(103);
+	var emptyFunction = __webpack_require__(101);
 
 	var RESET_BATCHED_UPDATES = {
 	  initialize: emptyFunction,
@@ -31507,6 +31507,44 @@
 	 * LICENSE file in the root directory of this source tree. An additional grant
 	 * of patent rights can be found in the PATENTS file in the same directory.
 	 *
+	 * @providesModule emptyFunction
+	 */
+
+	function makeEmptyFunction(arg) {
+	  return function() {
+	    return arg;
+	  };
+	}
+
+	/**
+	 * This function accepts and discards inputs; it has no side effects. This is
+	 * primarily useful idiomatically for overridable function endpoints which
+	 * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
+	 */
+	function emptyFunction() {}
+
+	emptyFunction.thatReturns = makeEmptyFunction;
+	emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
+	emptyFunction.thatReturnsTrue = makeEmptyFunction(true);
+	emptyFunction.thatReturnsNull = makeEmptyFunction(null);
+	emptyFunction.thatReturnsThis = function() { return this; };
+	emptyFunction.thatReturnsArgument = function(arg) { return arg; };
+
+	module.exports = emptyFunction;
+
+
+/***/ },
+/* 102 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/**
+	 * Copyright 2013-2014, Facebook, Inc.
+	 * All rights reserved.
+	 *
+	 * This source code is licensed under the BSD-style license found in the
+	 * LICENSE file in the root directory of this source tree. An additional grant
+	 * of patent rights can be found in the PATENTS file in the same directory.
+	 *
 	 * @providesModule ReactMarkupChecksum
 	 */
 
@@ -31548,7 +31586,7 @@
 
 
 /***/ },
-/* 102 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
@@ -31571,7 +31609,7 @@
 	var Transaction = __webpack_require__(106);
 
 	var assign = __webpack_require__(40);
-	var emptyFunction = __webpack_require__(103);
+	var emptyFunction = __webpack_require__(101);
 
 	/**
 	 * Provides a `CallbackQueue` queue for collecting `onDOMReady` callbacks
@@ -31662,44 +31700,6 @@
 	PooledClass.addPoolingTo(ReactServerRenderingTransaction);
 
 	module.exports = ReactServerRenderingTransaction;
-
-
-/***/ },
-/* 103 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/**
-	 * Copyright 2013-2014, Facebook, Inc.
-	 * All rights reserved.
-	 *
-	 * This source code is licensed under the BSD-style license found in the
-	 * LICENSE file in the root directory of this source tree. An additional grant
-	 * of patent rights can be found in the PATENTS file in the same directory.
-	 *
-	 * @providesModule emptyFunction
-	 */
-
-	function makeEmptyFunction(arg) {
-	  return function() {
-	    return arg;
-	  };
-	}
-
-	/**
-	 * This function accepts and discards inputs; it has no side effects. This is
-	 * primarily useful idiomatically for overridable function endpoints which
-	 * always need to be callable, since JS lacks a null-call idiom ala Cocoa.
-	 */
-	function emptyFunction() {}
-
-	emptyFunction.thatReturns = makeEmptyFunction;
-	emptyFunction.thatReturnsFalse = makeEmptyFunction(false);
-	emptyFunction.thatReturnsTrue = makeEmptyFunction(true);
-	emptyFunction.thatReturnsNull = makeEmptyFunction(null);
-	emptyFunction.thatReturnsThis = function() { return this; };
-	emptyFunction.thatReturnsArgument = function(arg) { return arg; };
-
-	module.exports = emptyFunction;
 
 
 /***/ },
@@ -33342,7 +33342,7 @@
 	var PooledClass = __webpack_require__(52);
 
 	var assign = __webpack_require__(40);
-	var emptyFunction = __webpack_require__(103);
+	var emptyFunction = __webpack_require__(101);
 	var getEventTarget = __webpack_require__(132);
 
 	/**
@@ -34566,7 +34566,7 @@
 	 * @typechecks
 	 */
 
-	var emptyFunction = __webpack_require__(103);
+	var emptyFunction = __webpack_require__(101);
 
 	/**
 	 * Upstream version of event listener. Does not take into account specific
@@ -36558,7 +36558,7 @@
 	var ExecutionEnvironment = __webpack_require__(43);
 
 	var createNodesFromMarkup = __webpack_require__(162);
-	var emptyFunction = __webpack_require__(103);
+	var emptyFunction = __webpack_require__(101);
 	var getMarkupWrap = __webpack_require__(163);
 	var invariant = __webpack_require__(51);
 

@@ -1,4 +1,4 @@
-require("../../stylesheets/my-app/main.css");
+require("../../stylesheets/study-twitter-api/main.css");
 
 var $ = require('jquery');
 var keymaster = require('keymaster');
@@ -10,12 +10,12 @@ var React = require('react');
 module.exports =
   React.createClass({
 
-    displayName: 'MyApp',
+    displayName: 'StudyTwitterApi',
 
     render:function(){
       return (
         <div className="app">
-          My App
+          study twitter api
         </div>
       )
     }

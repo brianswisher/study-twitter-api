@@ -1,3 +1,3 @@
 web: npm start
 sync: npm run sync
-bundle: npm run bundle:my-app
+bundle: npm run bundle:study-twitter-api
